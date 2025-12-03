@@ -16,10 +16,9 @@ const Hero = () => {
                 </div>
                 <div>
                     <h1 className={`${styles.heroHeadText}`}>Hi, I'm <span
-                        className={"text-[#915eff]"}>M Behlole Aqil</span></h1>
+                        className={"text-[#915eff]"}>Zeeshan Ahmed</span></h1>
                     <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-                        Delivering high-quality full-stack <br className={"sm:block hidden"}/> solutions with optimal
-                        performance.
+                        Senior Full Stack Engineer & Technical Lead <br className={"sm:block hidden"}/> building enterprise-scale cloud applications.
                     </p>
                 </div>
             </div>

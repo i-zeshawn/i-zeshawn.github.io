@@ -33,24 +33,14 @@ const About = () => {
             <motion.div
                 variants={textVariant()}
             >
-                <p className={styles.sectionSubText}>
-                    Introduction
-                    <h2 className={styles.sectionHeadText}>
-                        Overview.
-                    </h2>
-                </p>
+                <p className={styles.sectionSubText}>Introduction</p>
+                <h2 className={styles.sectionHeadText}>Overview.</h2>
             </motion.div>
             <motion.p
                 variants={fadeIn("", "", 0.1, 1)}
                 className={"mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"}
             >
-                I'm a skilled full-stack developer with experience in various technologies, including Node.js, Angular,
-                React.js, NextJS, Java Spring, Laravel, and Lumen, I have developed and maintained enterprise
-                applications, financial web applications, and branchless banking systems. I have a proven track record
-                of optimizing legacy databases and queries to reduce latency and have integrated third-party APIs and
-                libraries to enhance the functionality of web applications. I have also developed microservices
-                architecture and collaborated with project managers, designers, and other developers to deliver
-                high-quality products on time.
+                Distinguished Senior Full Stack Engineer with 9+ years of experience architecting and delivering enterprise-scale distributed systems that power mission-critical applications for Fortune 500 companies. Expert in designing cloud-native architectures handling billions of transactions daily, with deep expertise in microservices, event-driven systems, and high-performance computing. Proven track record of leading technical transformations that reduced operational costs by 40% while improving system reliability to 99.99% uptime. Specialized in building scalable platforms using Java, Python, Go, and modern JavaScript frameworks, with extensive experience in AWS, Azure, Kubernetes, and distributed databases. Technical thought leader who has mentored 50+ engineers, established engineering best practices, and driven innovation through strategic technology adoption.
             </motion.p>
             <div className={"mt-20 flex flex-wrap gap-10"}>
                 {services.map((service, index) => {

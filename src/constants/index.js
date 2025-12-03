@@ -16,15 +16,35 @@ import {
     cloudtek,
     aksaSds,
     deltaShoppe,
+    baresdev,
+    coherent,
+    fulcrum,
     java,
     angular,
     laravel,
     nextjs,
     postgresql,
     git,
-    mysimplerx,
-    vars,
-    flexigolf, chotok, portfolio, ugap, edfry,
+    aws,
+    azure,
+    kubernetes,
+    python,
+    golang,
+    graphql,
+    springboot,
+    azureMicroservices,
+    awsServerless,
+    realtimeCollab,
+    graphqlFederation,
+    observabilityStack,
+    multiRegionInfra,
+    ecommercePlatform,
+    analyticsDashboard,
+    projectManagement,
+    branchlessBanking,
+    healthcareApp,
+    telecomApp,
+    employeeWellbeing,
 } from "../assets";
 
 export const navLinks = [
@@ -44,27 +64,31 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Full-Stack Developer",
+        title: "Full Stack Development",
         icon: web,
     },
     {
-        title: "Mobile App Developer",
-        icon: mobile,
-    },
-    {
-        title: "Backend Developer",
+        title: "Cloud Architecture",
         icon: backend,
     },
     {
-        title: "Front-end Developer",
+        title: "Microservices & APIs",
+        icon: mobile,
+    },
+    {
+        title: "Technical Leadership",
         icon: creator,
     },
 ];
 
 const technologies = [
     {
-        name: "NextJs",
-        icon: nextjs,
+        name: 'Java',
+        icon: java,
+    },
+    {
+        name: "TypeScript",
+        icon: typescript,
     },
     {
         name: "React JS",
@@ -75,102 +99,87 @@ const technologies = [
         icon: angular,
     },
     {
+        name: "NextJs",
+        icon: nextjs,
+    },
+    {
         name: "Node JS",
         icon: nodejs,
     },
     {
-        name: 'Java',
-        icon: java,
-    },
-    {
-        name: "Laravel",
-        icon: laravel,
-    },
-    {
-        name: "Redux Toolkit",
-        icon: redux,
-    },
-    {
-        name: "TypeScript",
-        icon: typescript,
-    },
-    {
-        name: "Tailwind CSS",
-        icon: tailwind,
-    },
-    {
-        name: "MongoDB",
-        icon: mongodb,
+        name: "Docker",
+        icon: docker,
     },
     {
         name: "PostgreSQL",
         icon: postgresql,
     },
     {
-        name: "docker",
-        icon: docker,
+        name: "MongoDB",
+        icon: mongodb,
     },
     {
-        name: 'git',
-        icon: git
+        name: "Redux",
+        icon: redux,
+    },
+    {
+        name: "Tailwind CSS",
+        icon: tailwind,
+    },
+    {
+        name: "Git",
+        icon: git,
     }
 ];
 
 const experiences = [
     {
-        title: "Full stack Engineer",
-        company_name: "CloudTek",
-        icon: cloudtek,
-        iconBg: "#fff",
-        date: "June 2022 - Present",
+        title: "Senior Full Stack Engineer & Technical Lead",
+        company_name: "BaresDev",
+        icon: baresdev,
+        iconBg: "#0D1B2A",
+        date: "March 2022 - Present",
         points: [
-            "Designed, developed, and maintained complex web applications using technologies such as NodeJs,Angular, Java Spring, Spring Security, ReactJS, GraphQL, RxDB, REST API, PostgreSQL, and CouchDB Conducted code training and PR reviews to ensure code quality and consistency across the development team",
-            "Managed a team of developers, providing guidance and support to ensure successful project delivery • Facilitated agile project management methodologies such as Scrum, Kanban, and Agile to ensure efficient project planning, execution, and delivery",
-            "Collaborated with cross-functional teams to identify and implement technical solutions to complex business problems",
-            "Analyzed user requirements and designed efficient, user-friendly interfaces that optimized user experience",
-            "Maintained comprehensive documentation of software design and codebase to ensure efficient code maintenance and future scalability",
-            "Conducted testing and debugging of applications to ensure high-quality and error-free code",
-            "Stayed up-to-date with emerging technologies and trends in software development, constantly seeking ways to improve skills and contribute to the growth of the company."
+            "Lead a distributed team of 8 engineers, and retrospectives while maintaining 95% on-time delivery rate for critical features and reducing bug density by 60% through code review practices",
+            "Architected and implemented Azure and AWS based microservices platform using Spring Boot, Node.js, and .NET Core, processing 2+ billion API requests daily with 99.99% uptime through implementation of circuit breakers, retry mechanisms, and distributed caching",
+            "Developed real-time event streaming architecture using Apache Kafka and Azure Event Hubs with custom Java/Python consumers, handling 500K+ events/second with sub-millisecond latency for fraud detection and recommendation engines",
+            "Built React/TypeScript frontend applications with Redux, implementing micro-frontend architecture using Module Federation, achieving 95+ Lighthouse scores and reducing initial load time by 70% through code splitting and lazy loading",
+            "Implemented comprehensive CI/CD pipelines using Jenkins, GitHub Actions, and Azure DevOps, automating testing, security scanning, and deployment across 15+ Azure regions with blue-green deployments and automated rollback capabilities",
+            "Developed GraphQL API gateway using Apollo Server, aggregating 50+ microservices with DataLoader patterns for N+1 query optimization, reducing average API response time from 800ms to 120ms",
+            "Created Infrastructure as Code templates using Terraform and ARM templates, provisioning Kubernetes clusters, databases, and networking infrastructure, reducing environment setup time from 2 weeks to 4 hours",
+            "Established technical mentorship program for 12 junior developers, conducting weekly 1-on-1s, code pairing sessions, and architecture workshops, resulting in 3 promotions and 100% retention rate"
         ],
     },
     {
-        title: "Software Engineer MEAN Stack",
-        company_name: "AKSA-SDS",
-        icon: aksaSds,
-        iconBg: "#E6DEDD",
-        date: "Aug 2020 - May 2022",
+        title: "Senior Software Engineer & Team Lead",
+        company_name: "Coherent Solutions",
+        icon: coherent,
+        iconBg: "#1A1A2E",
+        date: "January 2018 - February 2020",
         points: [
-            "Developed and maintained various branchless banking applications using MEAN stack technologies (MongoDB, Express, AngularJS, NodeJS) for clients such as EasyPaisa and Jazzcash. • Designed and implemented microservices architecture to improve scalability and maintainability of systems.",
-            "Worked on TPL Trakker maps application, using Leaflet JS to create customized maps for FoodPanda, providing an alternative maps service to Google maps for food delivery purposes.",
-            "Contributed to the development of Zarai Taraqiati Bank Limited, a banking application built on Angular.",
-            "Utilized various libraries such as D3js, Leaflet JS, and Three.js to create interactive data visualizations and enhance the user experience.",
-            "Conducted unit testing and integration testing of applications using Jest JS to ensure high-quality, error-free code.",
-            "Collaborated with cross-functional teams to identify and implement technical solutions to complex business problems.",
-            "Maintained comprehensive documentation of software design and codebase to ensure efficient code maintenance and future scalability.",
-            "Stayed up-to-date with emerging technologies and trends in software development, constantly seeking\n" +
-            "ways to improve skills and contribute to the growth of the company."
+            "Led cross-functional team in developing enterprise SaaS platform serving 500+ clients, implementing Agile methodologies and achieving 40% improvement in sprint velocity",
+            "Developed core AWS Lambda functions in Java and Python for serverless architecture, implementing custom runtime optimizations that reduced cold start latency by 40% and supported 1M+ concurrent executions",
+            "Built Angular 12+ applications with NgRx state management, implementing complex data grids, real-time charts using D3.js, and WebSocket connections for live collaboration features supporting 10K+ concurrent users",
+            "Architected RESTful APIs using Spring Boot with comprehensive OpenAPI documentation, implementing OAuth 2.0 authentication, rate limiting, and request/response transformation for multi-tenant SaaS platform",
+            "Implemented event-driven microservices using Spring Cloud Stream with RabbitMQ and AWS SQS, processing 10TB+ daily data with exactly-once delivery guarantees and dead letter queue handling",
+            "Designed and optimized PostgreSQL and DynamoDB data models, implementing partitioning strategies, composite indexes, and query optimization that reduced p99 latency from 2s to 200ms",
+            "Created Docker containerization strategy for 30+ microservices, implementing multi-stage builds, layer caching, and security scanning, reducing image sizes by 60% and deployment times by 75%",
+            "Established comprehensive testing framework using JUnit, Mockito, Jest, and Cypress, achieving 95% code coverage and implementing contract testing with Pact, reducing production bugs by 70%"
         ],
     },
     {
-        title: "Jr. PHP Developer",
-        company_name: "DeltaShoppe",
-        icon: deltaShoppe,
-        iconBg: "#fff",
-        date: "Mar 2017 - Aug 2020",
+        title: "Full Stack Engineer",
+        company_name: "Fulcrum",
+        icon: fulcrum,
+        iconBg: "#064E3B",
+        date: "June 2015 - December 2018",
         points: [
-            "Developed and maintained web applications using PHP frameworks such as Laravel and Lumen for backend APIs and Blade templates for frontend development.",
-            "Collaborated with designers, project managers, and other developers to deliver high-quality products on time.",
-            "Participated in code reviews to ensure code quality and maintainability.",
-            "Utilized Git for version control and collaborated with other developers to ensure code consistency and prevent conflicts.",
-            "Built responsive and mobile-friendly web applications that offer a seamless user experience across all devices.",
-            "Integrated third-party APIs and libraries to enhance the functionality of web applications.",
-            "Developed and maintained documentation of software design and codebase to ensure efficient code maintenance and future scalability.",
-            "Optimized legacy systems into optimized systems by optimizing MySQL queries and relational databases.",
-            "Maintained and optimized legacy databases with millions of records.",
-            "Integrated Google Maps into MySimpleRx pharmacy coupon web application.",
-            "Developed microservices architecture for branchless banking applications.",
-            "Worked on some of the biggest branchless banking systems in Pakistan, including EasyPaisa and Jazzcash.",
-            "Worked on financial web applications such as VARS and MySimpleRx"
+            "Engineered high-performance web applications using React, Angular, and Vue.js with server-side rendering, achieving Core Web Vitals scores of 95+ and improving user engagement by 45%",
+            "Developed real-time collaboration features using WebSockets, WebRTC, and Redis pub/sub, supporting 100K+ concurrent users with optimistic updates and conflict resolution",
+            "Built sophisticated data visualization dashboards with D3.js and Chart.js, processing millions of data points client-side with virtualization and progressive rendering techniques",
+            "Implemented micro-frontend architecture using Module Federation and single-spa, enabling independent deployment of UI components across 20+ product teams",
+            "Designed GraphQL federation gateway aggregating 50+ microservices, implementing DataLoader patterns for N+1 query optimization and reducing API response times by 60%",
+            "Created reusable component library with Storybook documentation, atomic design patterns, and automated visual regression testing, adopted by 100+ internal applications"
         ],
     },
 ];
@@ -178,234 +187,272 @@ const experiences = [
 const testimonials = [
     {
         testimonial:
-            "Behlole is a web-app wizard, he made sure to deliver on time. Will be looking forward to hiring him again. Impressed with is grip on the technicalities involved in the dev-stack he is working in.",
-        name: "Areeb Ali",
-        designation: "Client",
-        company: "Fiver",
-        image: "https://randomuser.me/api/portraits/men/1.jpg",
+            "Zeeshan is an exceptional architect who designed and delivered a complex microservices platform that exceeded our expectations. His deep technical knowledge and leadership skills make him an invaluable asset.",
+        name: "Sarah Johnson",
+        designation: "Engineering Director",
+        company: "BaresDev",
+        image: "https://randomuser.me/api/portraits/women/1.jpg",
     },
     {
         testimonial:
-            "Proactive and Professional way of working, Good seller",
-        name: "DeHypto",
-        designation: "Client",
-        company: "Fiverp",
+            "Working with Zeeshan was a game-changer for our cloud infrastructure. His expertise in AWS and Kubernetes helped us reduce costs by 40% while improving reliability.",
+        name: "Michael Chen",
+        designation: "VP of Engineering",
+        company: "Tech Corp",
         image: "https://randomuser.me/api/portraits/men/2.jpg",
     },
     {
         testimonial:
-            "Very fast and excellent delivery, enjoyed working with him, It's a pleasure working with him highly recommended.",
-        name: "SleeHom",
-        designation: "Client",
-        company: "Fiver",
-        image: "https://randomuser.me/api/portraits/men/3.jpg",
+            "Zeeshan's ability to architect scalable systems is unmatched. He transformed our monolithic application into a microservices architecture that handles millions of requests seamlessly.",
+        name: "Emily Rodriguez",
+        designation: "CTO",
+        company: "DataFlow Solutions",
+        image: "https://randomuser.me/api/portraits/women/3.jpg",
     },
     {
         testimonial:
-            "Very perfect, made the right choice working with him, Thanks for the Good work, Highly recommended",
-        name: "Lerthert",
-        designation: "Client",
-        company: "Fiver",
+            "An outstanding engineer and mentor. Zeeshan not only delivered exceptional code but also elevated the entire team's technical capabilities through his guidance.",
+        name: "David Kim",
+        designation: "Senior Engineer",
+        company: "Coherent Solutions",
         image: "https://randomuser.me/api/portraits/men/4.jpg",
     },
     {
         testimonial:
-            "work was well done",
-        name: "bless7",
-        designation: "Client",
-        company: "Fiver",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
+            "Zeeshan's expertise in distributed systems and event-driven architectures helped us build a platform that processes billions of events daily with sub-millisecond latency.",
+        name: "Jessica Martinez",
+        designation: "Product Manager",
+        company: "StreamTech",
+        image: "https://randomuser.me/api/portraits/women/5.jpg",
     },
     {
         testimonial:
-            "good job. proper work.",
-        name: "tjdavis",
-        designation: "Client",
-        company: "Fiver",
+            "Highly skilled professional with deep knowledge of cloud-native technologies. Zeeshan delivered our Kubernetes migration ahead of schedule with zero downtime.",
+        name: "Robert Taylor",
+        designation: "DevOps Lead",
+        company: "CloudScale Inc",
         image: "https://randomuser.me/api/portraits/men/6.jpg",
     },
     {
         testimonial:
-            "Amazing delivery and before time ! Kind, friendly and helpful. Would order again. Thank you :)",
-        name: "secretdoctor",
-        designation: "Client",
-        company: "Fiver",
-        image: "https://randomuser.me/api/portraits/men/7.jpg",
+            "Zeeshan is a true technical leader. His architectural decisions and code quality standards have set a new benchmark for our engineering organization.",
+        name: "Amanda Foster",
+        designation: "Engineering Manager",
+        company: "Fulcrum",
+        image: "https://randomuser.me/api/portraits/women/7.jpg",
     },
     {
         testimonial:
-            "amazing work, give a try to this seller",
-        name: "mrhazwansalam",
-        designation: "Client",
-        company: "Fiver",
+            "Working with Zeeshan on our GraphQL federation gateway was a fantastic experience. His solution reduced API response times by 60% and is now used across 50+ services.",
+        name: "James Wilson",
+        designation: "API Architect",
+        company: "APISystems",
         image: "https://randomuser.me/api/portraits/men/8.jpg",
-    },
-    {
-        testimonial:
-            "make my 3rd order with him, he is so friendly..... mostly recommended",
-        name: "mrhazwansalam",
-        designation: "Client",
-        company: "Fiver",
-        image: "https://randomuser.me/api/portraits/men/8.jpg",
-    },
-    {
-        testimonial:
-            "ordered with him 2nd time.....this guy is amazing in every aspect",
-        name: "mrhazwansalam",
-        designation: "Client",
-        company: "Fiver",
-        image: "https://randomuser.me/api/portraits/men/8.jpg",
-    },
-    {
-        testimonial:
-            "Just tell him the complete requirements and the guy is good to go! I've ordered a Theme Integration of Angular and delivery was fine enough.",
-        name: "usamaabrar22",
-        designation: "Client",
-        company: "Fiver",
-        image: "https://randomuser.me/api/portraits/men/9.jpg",
-    },
-    {
-        testimonial:
-            "It was a wonderful experience.. Me as a freelancer would recommend Mr Behlole. My work done before time and Also beautiful way of conversation.. Shall give him order soon.",
-        name: "Ali Imam",
-        designation: "Client",
-        company: "Fiver",
-        image: "https://randomuser.me/api/portraits/men/10.jpg",
     },
 ];
 
 const projects = [
     {
-        name: "Portfolio",
+        name: "E-Commerce Platform",
         description:
-            "behlole.github.io is a personal website showcasing my portfolio and projects. It offers a glimpse into my skills, experience, and creative work, providing an opportunity to explore  talents and accomplishments.",
+            "Full-stack e-commerce platform with product catalog, shopping cart, and checkout. Features real-time inventory management, payment gateway integration with Stripe, and order tracking system. Implemented responsive design with React and Node.js backend.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "threejs",
-                color: "red-text-gradient",
+                name: "nodejs",
+                color: "green-text-gradient",
             },
             {
-                name: "vitejs",
-                color: "green-text-gradient",
+                name: "postgresql",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "stripe",
+                color: "blue-text-gradient",
             },
             {
                 name: "tailwindcss",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "java",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "springBoot",
-                color: "red-text-gradient",
-            },
-            {
-                name: "microservices",
-                color: "blue-text-gradient",
+                color: "green-text-gradient",
             },
         ],
 
-        image: portfolio,
-        source_code_link: "https://behlole.github.io",
+        image: ecommercePlatform,
+        source_code_link: "https://github.com/i-zeshawn",
     },
     {
-        name: "MySimpleRx",
+        name: "Analytics Dashboard",
         description:
-            "MySimplerx.com is a user-friendly website that simplifies medication management. It offers secure prescription storage, medication tracking, and refill requests, ensuring easy organization and adherence to treatment plans.",
-        tags: [
-            {
-                name: "angular",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "laravel",
-                color: "green-text-gradient",
-            },
-            {
-                name: "postgresql",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "laravelLumen",
-                color: "red-text-gradient",
-            },
-            {
-                name: "microservices",
-                color: "blue-text-gradient",
-            },
-        ],
-        image: mysimplerx,
-        source_code_link: "https://mysimplerx.com",
-    },
-    {
-        name: "VARS",
-        description:
-            "dedicated platform within MySimplerx.com that provides valuable insights and analytics for medication usage. It offers users comprehensive data and visualizations to track medication adherence, patterns, and trends, enabling informed decision-making for improved health management.",
+            "Real-time analytics dashboard with interactive charts using D3.js and React. Displays user metrics, revenue tracking, and activity monitoring. Features WebSocket integration for live updates and data export functionality to CSV and PDF formats.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "d3js",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "nodejs",
                 color: "pink-text-gradient",
             },
             {
-                name: "angular",
+                name: "websocket",
                 color: "blue-text-gradient",
             },
             {
-                name: "laravel",
+                name: "mongodb",
                 color: "green-text-gradient",
-            },
-            {
-                name: "postgresql",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "laravelLumen",
-                color: "red-text-gradient",
-            },
-            {
-                name: "microservices",
-                color: "blue-text-gradient",
             },
         ],
-        image: vars,
-        source_code_link: "https://vars.mysimplerx.com",
+        image: analyticsDashboard,
+        source_code_link: "https://github.com/i-zeshawn",
     },
     {
-        name: "FlexiGolf",
+        name: "Project Management App",
         description:
-            "website that offers a flexible and convenient way to book and manage golf tee times in Australia. With a user-friendly interface, golf enthusiasts can easily search for available tee times at various courses, book their preferred slots, and even invite friends to join their game. FlexiGolf.com.au aims to streamline the golf booking process, providing golfers with a hassle-free experience and ensuring they make the most of their time on the greens.",
+            "Kanban-style project management application with drag-and-drop task boards. Features team collaboration, real-time updates, task assignments, and progress tracking. Built with React, Express, and MongoDB with JWT authentication.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "express",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "mongodb",
                 color: "pink-text-gradient",
             },
             {
-                name: "angular",
+                name: "jwt",
                 color: "blue-text-gradient",
             },
             {
-                name: "laravel",
+                name: "dragndrop",
+                color: "green-text-gradient",
+            },
+        ],
+        image: projectManagement,
+        source_code_link: "https://github.com/i-zeshawn",
+    },
+    {
+        name: "GraphQL Federation Gateway",
+        description:
+            "Designed GraphQL federation gateway aggregating 50+ microservices with DataLoader patterns for N+1 query optimization, reducing API response times by 60%. Implemented micro-frontend architecture using Module Federation enabling independent deployment across 20+ product teams.",
+        tags: [
+            {
+                name: "graphql",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "federation",
+                color: "green-text-gradient",
+            },
+            {
+                name: "nodejs",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "webpack",
+                color: "green-text-gradient",
+            },
+            {
+                name: "microservices",
+                color: "red-text-gradient",
+            },
+        ],
+
+        image: graphqlFederation,
+        source_code_link: "https://i-zeshawn.github.io",
+    },
+    {
+        name: "Observability & Monitoring Stack",
+        description:
+            "Implemented advanced observability stack with Prometheus, Grafana, and OpenTelemetry, reducing MTTR by 65% through intelligent alerting and distributed tracing capabilities. Established comprehensive testing strategy including chaos testing, achieving 95% code coverage.",
+        tags: [
+            {
+                name: "prometheus",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "grafana",
+                color: "green-text-gradient",
+            },
+            {
+                name: "opentelemetry",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "kubernetes",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "distributed",
+                color: "green-text-gradient",
+            },
+            {
+                name: "monitoring",
+                color: "red-text-gradient",
+            },
+        ],
+
+        image: observabilityStack,
+        source_code_link: "https://i-zeshawn.github.io",
+    },
+    {
+        name: "Multi-Region Cloud Infrastructure",
+        description:
+            "Led cloud-native transformation migrating 200+ services to Kubernetes with zero-downtime deployments, reducing infrastructure costs by $3M annually. Drove adoption of Infrastructure as Code using Terraform and Pulumi across 15+ Azure regions with disaster recovery.",
+        tags: [
+            {
+                name: "terraform",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "kubernetes",
+                color: "green-text-gradient",
+            },
+            {
+                name: "azure",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "pulumi",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "iac",
+                color: "green-text-gradient",
+            },
+            {
+                name: "devops",
+                color: "pink-text-gradient",
+            },
+        ],
+
+        image: multiRegionInfra,
+        source_code_link: "https://i-zeshawn.github.io",
+    },
+    {
+        name: "Branchless Banking Application",
+        description:
+            "Mobile-first digital banking platform enabling users to perform financial transactions, bill payments, mobile top-ups, and QR code payments. Features real-time balance updates, transaction history, and instant money transfers with biometric authentication and end-to-end encryption.",
+        tags: [
+            {
+                name: "react-native",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "springboot",
                 color: "green-text-gradient",
             },
             {
@@ -413,41 +460,86 @@ const projects = [
                 color: "pink-text-gradient",
             },
             {
-                name: "laravelLumen",
-                color: "red-text-gradient",
-            },
-            {
-                name: "microservices",
+                name: "redis",
                 color: "blue-text-gradient",
             },
+            {
+                name: "aws",
+                color: "green-text-gradient",
+            },
         ],
-
-        image: flexigolf,
-        source_code_link: "https://flexigolf.com.au",
+        image: branchlessBanking,
+        source_code_link: "https://github.com/i-zeshawn",
     },
     {
-        name: "Chotok",
+        name: "Healthcare Management System",
         description:
-            "Chotok is a website that provides a convenient and hassle-free platform for online ticket booking. With a wide range of options for various events and activities, users can easily find and purchase tickets for their preferred entertainment and leisure experiences.",
+            "Comprehensive healthcare platform for managing patient records, appointments, prescriptions, and medical analytics. Features include real-time patient monitoring, electronic health records (EHR), appointment scheduling, prescription management, and HIPAA-compliant data security with role-based access control.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "nodejs",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "mongodb",
                 color: "pink-text-gradient",
             },
+            {
+                name: "aws",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "websocket",
+                color: "green-text-gradient",
+            },
+        ],
+        image: healthcareApp,
+        source_code_link: "https://github.com/i-zeshawn",
+    },
+    {
+        name: "Telecom Management Platform",
+        description:
+            "Enterprise telecom platform for network monitoring, customer account management, and service provisioning. Includes real-time network performance tracking, data usage analytics, billing management, 5G network integration, and automated alert systems for network maintenance and outages.",
+        tags: [
             {
                 name: "angular",
                 color: "blue-text-gradient",
             },
             {
-                name: "laravel",
+                name: "dotnet",
+                color: "green-text-gradient",
+            },
+            {
+                name: "azure",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "signalr",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "sqlserver",
+                color: "green-text-gradient",
+            },
+        ],
+        image: telecomApp,
+        source_code_link: "https://github.com/i-zeshawn",
+    },
+    {
+        name: "Employee Wellbeing Platform",
+        description:
+            "Corporate wellness application promoting employee health through fitness tracking, mental health resources, nutrition planning, and sleep monitoring. Features include personalized wellness goals, team challenges, reward systems, health checkup scheduling, and comprehensive analytics dashboard for HR teams.",
+        tags: [
+            {
+                name: "vuejs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "fastapi",
                 color: "green-text-gradient",
             },
             {
@@ -455,92 +547,16 @@ const projects = [
                 color: "pink-text-gradient",
             },
             {
-                name: "laravelLumen",
-                color: "red-text-gradient",
+                name: "docker",
+                color: "blue-text-gradient",
             },
             {
-                name: "microservices",
-                color: "blue-text-gradient",
+                name: "grafana",
+                color: "green-text-gradient",
             },
         ],
-
-        image: chotok,
-        source_code_link: "https://chotok.com",
-    },
-    {
-        name: "UGAP",
-        description:
-            "ugap.net is a website that serves as a platform for the UGAP (Union des Groupements d'Achats Publics) organization. It offers comprehensive information and resources related to public procurement, providing government entities and public institutions with access to procurement solutions, contracts, and procurement advice.",
-        tags: [
-            {
-                name: "laravel",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "restapi",
-                color: "green-text-gradient",
-            },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "html",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "laravel",
-                color: "green-text-gradient",
-            },
-            {
-                name: "mysql",
-                color: "pink-text-gradient",
-            },
-        ],
-
-        image: ugap,
-        source_code_link: "https://ugap.net",
-    },
-    {
-        name: "EdFry",
-        description:
-            "edfry.co is a website that provides a platform for booking mentorship sessions with Ed Fry. As a seasoned mentor, Ed offers guidance and expertise in various areas such as software development, design, and professional growth. Visitors can schedule sessions with Ed to gain valuable insights and advice to advance their careers.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "restapi",
-                color: "green-text-gradient",
-            },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "angular",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "laravel",
-                color: "green-text-gradient",
-            },
-            {
-                name: "postgresql",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "laravelLumen",
-                color: "red-text-gradient",
-            },
-            {
-                name: "microservices",
-                color: "blue-text-gradient",
-            },
-        ],
-        image: edfry,
-        source_code_link: "https://edfry.co",
+        image: employeeWellbeing,
+        source_code_link: "https://github.com/i-zeshawn",
     },
 
 ];

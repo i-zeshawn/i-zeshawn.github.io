@@ -26,25 +26,38 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import cloudtek from './company/cloudtek.jpeg';
 import aksaSds from './company/aksa-sds.png';
 import deltaShoppe from './company/deltashoppe.jpeg';
+import baresdev from './company/baresdev.svg';
+import coherent from './company/coherent.svg';
+import fulcrum from './company/fulcrum.svg';
 
 import java from './tech/java.png';
 import angular from './tech/angular.png';
 import laravel from './tech/laravel.png';
 import nextjs from './tech/nextjs.png';
 import postgresql from './tech/postgresql.png';
-import mysimplerx from './mysimplerx.png';
-import vars from './vars.png';
-import flexigolf from './flexigolf.png';
-import chotok from './chotok.png';
-import portfolio from './portfolio.png';
-import ugap from './ugap.png';
-import edfry from './edfry.png';
+import aws from './tech/aws.svg';
+import azure from './tech/azure.svg';
+import kubernetes from './tech/kubernetes.svg';
+import python from './tech/python.svg';
+import golang from './tech/golang.svg';
+import graphql from './tech/graphql.svg';
+import springboot from './tech/springboot.svg';
+import azureMicroservices from './azure-microservices.svg';
+import awsServerless from './aws-serverless.svg';
+import realtimeCollab from './realtime-collab.svg';
+import graphqlFederation from './graphql-federation.svg';
+import observabilityStack from './observability-stack.svg';
+import multiRegionInfra from './multi-region-infra.svg';
+import ecommercePlatform from './ecommerce-platform.svg';
+import analyticsDashboard from './analytics-dashboard.svg';
+import projectManagement from './project-management.svg';
+import branchlessBanking from './branchless-banking.svg';
+import healthcareApp from './healthcare-app.svg';
+import telecomApp from './telecom-app.svg';
+import employeeWellbeing from './employee-wellbeing.svg';
 
 
 export {
@@ -73,22 +86,35 @@ export {
     shopify,
     starbucks,
     tesla,
-    carrent,
-    jobit,
-    tripguide,
     cloudtek,
     aksaSds,
     deltaShoppe,
+    baresdev,
+    coherent,
+    fulcrum,
     java,
     angular,
     laravel,
     nextjs,
     postgresql,
-    mysimplerx,
-    vars,
-    flexigolf,
-    portfolio,
-    ugap,
-    edfry,
-    chotok
+    aws,
+    azure,
+    kubernetes,
+    python,
+    golang,
+    graphql,
+    springboot,
+    azureMicroservices,
+    awsServerless,
+    realtimeCollab,
+    graphqlFederation,
+    observabilityStack,
+    multiRegionInfra,
+    ecommercePlatform,
+    analyticsDashboard,
+    projectManagement,
+    branchlessBanking,
+    healthcareApp,
+    telecomApp,
+    employeeWellbeing
 };
