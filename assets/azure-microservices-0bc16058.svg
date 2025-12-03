@@ -1,0 +1,119 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="azure-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F2027"/>
+      <stop offset="50%" style="stop-color:#203A43"/>
+      <stop offset="100%" style="stop-color:#2C5364"/>
+    </linearGradient>
+    <linearGradient id="azure-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0089D6"/>
+      <stop offset="100%" style="stop-color:#50E3C2"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#azure-bg)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <path d="M0 0 L800 0 L800 600 L0 600 Z" fill="none" stroke="#0089D6" stroke-width="1" stroke-dasharray="20,20"/>
+    <line x1="0" y1="150" x2="800" y2="150" stroke="#0089D6" stroke-width="0.5"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#0089D6" stroke-width="0.5"/>
+    <line x1="0" y1="450" x2="800" y2="450" stroke="#0089D6" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="600" stroke="#0089D6" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="600" stroke="#0089D6" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="600" stroke="#0089D6" stroke-width="0.5"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="60" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="url(#azure-accent)" text-anchor="middle">Azure Microservices Platform</text>
+  <text x="400" y="90" font-family="Arial, sans-serif" font-size="16" fill="#50E3C2" text-anchor="middle" opacity="0.8">Processing 2+ Billion API Requests Daily</text>
+
+  <!-- Central API Gateway -->
+  <g transform="translate(350, 250)">
+    <rect x="0" y="0" width="100" height="80" rx="10" fill="url(#azure-accent)" opacity="0.2"/>
+    <rect x="0" y="0" width="100" height="80" rx="10" fill="none" stroke="url(#azure-accent)" stroke-width="2" filter="url(#glow)"/>
+    <text x="50" y="35" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">API</text>
+    <text x="50" y="52" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">Gateway</text>
+    <text x="50" y="70" font-family="Arial, sans-serif" font-size="10" fill="#50E3C2" text-anchor="middle">99.99% uptime</text>
+  </g>
+
+  <!-- Microservices -->
+  <g id="microservice-1" transform="translate(150, 150)">
+    <circle cx="30" cy="30" r="25" fill="url(#azure-accent)" opacity="0.3"/>
+    <circle cx="30" cy="30" r="25" fill="none" stroke="#0089D6" stroke-width="2"/>
+    <text x="30" y="35" font-family="Arial, sans-serif" font-size="12" fill="#fff" text-anchor="middle">MS-1</text>
+  </g>
+
+  <g id="microservice-2" transform="translate(250, 180)">
+    <circle cx="30" cy="30" r="25" fill="url(#azure-accent)" opacity="0.3"/>
+    <circle cx="30" cy="30" r="25" fill="none" stroke="#0089D6" stroke-width="2"/>
+    <text x="30" y="35" font-family="Arial, sans-serif" font-size="12" fill="#fff" text-anchor="middle">MS-2</text>
+  </g>
+
+  <g id="microservice-3" transform="translate(150, 380)">
+    <circle cx="30" cy="30" r="25" fill="url(#azure-accent)" opacity="0.3"/>
+    <circle cx="30" cy="30" r="25" fill="none" stroke="#0089D6" stroke-width="2"/>
+    <text x="30" y="35" font-family="Arial, sans-serif" font-size="12" fill="#fff" text-anchor="middle">MS-3</text>
+  </g>
+
+  <g id="microservice-4" transform="translate(250, 410)">
+    <circle cx="30" cy="30" r="25" fill="url(#azure-accent)" opacity="0.3"/>
+    <circle cx="30" cy="30" r="25" fill="none" stroke="#0089D6" stroke-width="2"/>
+    <text x="30" y="35" font-family="Arial, sans-serif" font-size="12" fill="#fff" text-anchor="middle">MS-4</text>
+  </g>
+
+  <g id="microservice-5" transform="translate(570, 150)">
+    <circle cx="30" cy="30" r="25" fill="url(#azure-accent)" opacity="0.3"/>
+    <circle cx="30" cy="30" r="25" fill="none" stroke="#0089D6" stroke-width="2"/>
+    <text x="30" y="35" font-family="Arial, sans-serif" font-size="12" fill="#fff" text-anchor="middle">MS-5</text>
+  </g>
+
+  <g id="microservice-6" transform="translate(570, 380)">
+    <circle cx="30" cy="30" r="25" fill="url(#azure-accent)" opacity="0.3"/>
+    <circle cx="30" cy="30" r="25" fill="none" stroke="#0089D6" stroke-width="2"/>
+    <text x="30" y="35" font-family="Arial, sans-serif" font-size="12" fill="#fff" text-anchor="middle">MS-6</text>
+  </g>
+
+  <!-- Kafka Event Streams -->
+  <g transform="translate(50, 480)">
+    <rect x="0" y="0" width="120" height="60" rx="8" fill="#E74C3C" opacity="0.2"/>
+    <rect x="0" y="0" width="120" height="60" rx="8" fill="none" stroke="#E74C3C" stroke-width="2"/>
+    <text x="60" y="25" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E74C3C" text-anchor="middle">Kafka</text>
+    <text x="60" y="42" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">500K events/sec</text>
+  </g>
+
+  <!-- Kubernetes -->
+  <g transform="translate(630, 480)">
+    <rect x="0" y="0" width="120" height="60" rx="8" fill="#326CE5" opacity="0.2"/>
+    <rect x="0" y="0" width="120" height="60" rx="8" fill="none" stroke="#326CE5" stroke-width="2"/>
+    <text x="60" y="25" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#326CE5" text-anchor="middle">Kubernetes</text>
+    <text x="60" y="42" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">200+ services</text>
+  </g>
+
+  <!-- Connection lines -->
+  <line x1="180" y1="180" x2="350" y2="270" stroke="url(#azure-accent)" stroke-width="2" opacity="0.4" stroke-dasharray="5,5"/>
+  <line x1="280" y1="210" x2="350" y2="270" stroke="url(#azure-accent)" stroke-width="2" opacity="0.4" stroke-dasharray="5,5"/>
+  <line x1="180" y1="410" x2="350" y2="310" stroke="url(#azure-accent)" stroke-width="2" opacity="0.4" stroke-dasharray="5,5"/>
+  <line x1="280" y1="440" x2="350" y2="310" stroke="url(#azure-accent)" stroke-width="2" opacity="0.4" stroke-dasharray="5,5"/>
+  <line x1="450" y1="290" x2="570" y2="180" stroke="url(#azure-accent)" stroke-width="2" opacity="0.4" stroke-dasharray="5,5"/>
+  <line x1="450" y1="290" x2="570" y2="410" stroke="url(#azure-accent)" stroke-width="2" opacity="0.4" stroke-dasharray="5,5"/>
+
+  <!-- Metrics badges -->
+  <g transform="translate(520, 540)">
+    <rect x="0" y="0" width="100" height="30" rx="15" fill="#27AE60" opacity="0.3"/>
+    <text x="50" y="20" font-family="Arial, sans-serif" font-size="12" fill="#27AE60" text-anchor="middle" font-weight="bold">↓ $3M Cost</text>
+  </g>
+
+  <g transform="translate(180, 540)">
+    <rect x="0" y="0" width="140" height="30" rx="15" fill="#F39C12" opacity="0.3"/>
+    <text x="70" y="20" font-family="Arial, sans-serif" font-size="12" fill="#F39C12" text-anchor="middle" font-weight="bold">Zero-downtime</text>
+  </g>
+</svg>

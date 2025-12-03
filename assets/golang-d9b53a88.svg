@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="go-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#00ADD8;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#0099C5;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+
+    <!-- Background -->
+    <rect width="256" height="256" fill="#FFFFFF" rx="20"/>
+
+    <!-- Go gopher simplified -->
+    <ellipse cx="128" cy="140" rx="60" ry="55" fill="url(#go-gradient)"/>
+
+    <!-- Eyes -->
+    <circle cx="110" cy="130" r="8" fill="white"/>
+    <circle cx="146" cy="130" r="8" fill="white"/>
+    <circle cx="112" cy="130" r="4" fill="#000000"/>
+    <circle cx="148" cy="130" r="4" fill="#000000"/>
+
+    <!-- Nose -->
+    <ellipse cx="128" cy="145" rx="6" ry="4" fill="#0088B8"/>
+
+    <!-- Teeth smile -->
+    <path d="M115 155 Q128 162 141 155" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Ears -->
+    <ellipse cx="85" cy="125" rx="12" ry="18" fill="#00ADD8"/>
+    <ellipse cx="171" cy="125" rx="12" ry="18" fill="#00ADD8"/>
+
+    <!-- Top text -->
+    <text x="128" y="70" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#00ADD8">Go</text>
+</svg>

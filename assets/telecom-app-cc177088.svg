@@ -1,0 +1,119 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="telecomGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7C3AED"/>
+      <stop offset="100%" style="stop-color:#A855F7"/>
+    </linearGradient>
+    <filter id="telecomShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FAF5FF"/>
+
+  <!-- Mobile Device -->
+  <rect x="100" y="50" width="280" height="500" rx="25" fill="#18181B" stroke="#09090B" stroke-width="6"/>
+  <rect x="115" y="65" width="250" height="470" rx="15" fill="#FFFFFF"/>
+
+  <!-- Status Bar -->
+  <rect x="115" y="65" width="250" height="25" rx="15 15 0 0" fill="#7C3AED"/>
+  <text x="135" y="82" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF" font-weight="bold">TelecomX</text>
+  <text x="340" y="82" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">5G ●●●●</text>
+
+  <!-- Header -->
+  <rect x="115" y="90" width="250" height="55" fill="url(#telecomGrad)"/>
+  <text x="240" y="115" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">My Account</text>
+  <text x="240" y="133" font-family="Arial, sans-serif" font-size="11" fill="#E9D5FF" text-anchor="middle">+1 (555) 123-4567</text>
+
+  <!-- Data Usage Card -->
+  <rect x="130" y="160" width="220" height="110" rx="12" fill="#FFFFFF" stroke="#D8B4FE" stroke-width="2" filter="url(#telecomShadow)"/>
+  <text x="145" y="180" font-family="Arial, sans-serif" font-size="12" fill="#6B7280" font-weight="bold">Data Usage This Month</text>
+
+  <!-- Progress Bar Background -->
+  <rect x="145" y="195" width="190" height="12" rx="6" fill="#F3F4F6"/>
+  <!-- Progress Bar Fill -->
+  <rect x="145" y="195" width="133" height="12" rx="6" fill="#7C3AED"/>
+
+  <text x="145" y="225" font-family="Arial, sans-serif" font-size="20" fill="#7C3AED" font-weight="bold">15.2 GB</text>
+  <text x="145" y="240" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">of 20 GB used (76%)</text>
+  <text x="145" y="260" font-family="Arial, sans-serif" font-size="9" fill="#059669">↑ 2.3 GB today</text>
+
+  <!-- Plan Details -->
+  <rect x="130" y="285" width="220" height="80" rx="12" fill="#F5F3FF" stroke="#D8B4FE" stroke-width="1"/>
+  <text x="145" y="305" font-family="Arial, sans-serif" font-size="12" fill="#5B21B6" font-weight="bold">Unlimited Plus Plan</text>
+  <text x="145" y="325" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">✓ Unlimited Calls &amp; SMS</text>
+  <text x="145" y="343" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">✓ 20GB High-Speed Data</text>
+  <text x="145" y="361" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">✓ 5G Network Access</text>
+
+  <!-- Quick Actions -->
+  <text x="145" y="395" font-family="Arial, sans-serif" font-size="13" fill="#111827" font-weight="bold">Quick Actions</text>
+
+  <!-- Action Buttons -->
+  <g>
+    <rect x="130" y="405" width="100" height="70" rx="10" fill="#DBEAFE"/>
+    <text x="180" y="435" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">💳</text>
+    <text x="180" y="460" font-family="Arial, sans-serif" font-size="10" fill="#1E40AF" text-anchor="middle" font-weight="bold">Pay Bill</text>
+  </g>
+
+  <g>
+    <rect x="250" y="405" width="100" height="70" rx="10" fill="#FEE2E2"/>
+    <text x="300" y="435" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">📊</text>
+    <text x="300" y="460" font-family="Arial, sans-serif" font-size="10" fill="#991B1B" text-anchor="middle" font-weight="bold">Usage Stats</text>
+  </g>
+
+  <g>
+    <rect x="130" y="490" width="100" height="35" rx="8" fill="#D1FAE5"/>
+    <text x="180" y="512" font-family="Arial, sans-serif" font-size="10" fill="#065F46" text-anchor="middle" font-weight="bold">📞 Support</text>
+  </g>
+
+  <g>
+    <rect x="250" y="490" width="100" height="35" rx="8" fill="#FEF3C7"/>
+    <text x="300" y="512" font-family="Arial, sans-serif" font-size="10" fill="#92400E" text-anchor="middle" font-weight="bold">🎁 Rewards</text>
+  </g>
+
+  <!-- Desktop Dashboard Preview -->
+  <rect x="420" y="100" width="330" height="420" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+
+  <!-- Dashboard Header -->
+  <rect x="420" y="100" width="330" height="50" rx="8 8 0 0" fill="#7C3AED"/>
+  <text x="585" y="130" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">Admin Dashboard</text>
+
+  <!-- Network Status -->
+  <text x="440" y="175" font-family="Arial, sans-serif" font-size="13" fill="#111827" font-weight="bold">Network Status</text>
+
+  <rect x="440" y="185" width="150" height="70" rx="8" fill="#ECFDF5" stroke="#6EE7B7" stroke-width="1"/>
+  <text x="455" y="205" font-family="Arial, sans-serif" font-size="11" fill="#065F46">Active Connections</text>
+  <text x="455" y="230" font-family="Arial, sans-serif" font-size="24" fill="#059669" font-weight="bold">24.5K</text>
+  <text x="455" y="247" font-family="Arial, sans-serif" font-size="9" fill="#10B981">99.8% Uptime</text>
+
+  <rect x="605" y="185" width="130" height="70" rx="8" fill="#EEF2FF" stroke="#A5B4FC" stroke-width="1"/>
+  <text x="620" y="205" font-family="Arial, sans-serif" font-size="11" fill="#3730A3">Bandwidth</text>
+  <text x="620" y="230" font-family="Arial, sans-serif" font-size="24" fill="#4F46E5" font-weight="bold">2.8 TB</text>
+  <text x="620" y="247" font-family="Arial, sans-serif" font-size="9" fill="#6366F1">Per Hour</text>
+
+  <!-- Recent Alerts -->
+  <text x="440" y="285" font-family="Arial, sans-serif" font-size="13" fill="#111827" font-weight="bold">Recent Alerts</text>
+
+  <rect x="440" y="295" width="295" height="35" rx="6" fill="#F0FDF4"/>
+  <text x="455" y="313" font-family="Arial, sans-serif" font-size="10" fill="#065F46">✓ Network upgrade completed - Tower 42B</text>
+
+  <rect x="440" y="340" width="295" height="35" rx="6" fill="#FEF3C7"/>
+  <text x="455" y="358" font-family="Arial, sans-serif" font-size="10" fill="#92400E">⚠ Scheduled maintenance - Zone 5 (2 AM)</text>
+
+  <rect x="440" y="385" width="295" height="35" rx="6" fill="#DBEAFE"/>
+  <text x="455" y="403" font-family="Arial, sans-serif" font-size="10" fill="#1E40AF">ℹ New 5G tower activated - Coverage +15%</text>
+
+  <!-- Performance Graph -->
+  <text x="440" y="445" font-family="Arial, sans-serif" font-size="13" fill="#111827" font-weight="bold">Network Performance</text>
+
+  <rect x="440" y="455" width="295" height="55" rx="6" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+
+  <!-- Simple Line Chart -->
+  <path d="M 455 490 L 475 480 L 495 485 L 515 475 L 535 470 L 555 465 L 575 460 L 595 468 L 615 463 L 635 458 L 655 462 L 675 455 L 695 450 L 715 455"
+        stroke="#7C3AED" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Tech Stack Badge -->
+  <rect x="500" y="545" width="200" height="22" rx="11" fill="#7C3AED" opacity="0.9"/>
+  <text x="600" y="560" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="bold">Angular + .NET Core + Azure</text>
+</svg>

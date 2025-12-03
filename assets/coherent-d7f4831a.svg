@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="coherent-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#C44569;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="coherent-gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FFA07A;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#FF6B6B;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+
+    <!-- Background -->
+    <rect width="200" height="200" fill="#1A1A2E" rx="20"/>
+
+    <!-- Coherent wave pattern representing solutions -->
+    <g transform="translate(100, 100)">
+        <!-- Center circle -->
+        <circle cx="0" cy="0" r="8" fill="url(#coherent-gradient)"/>
+
+        <!-- Concentric circles representing coherence -->
+        <circle cx="0" cy="0" r="25" fill="none" stroke="url(#coherent-gradient)" stroke-width="2" opacity="0.7"/>
+        <circle cx="0" cy="0" r="40" fill="none" stroke="url(#coherent-gradient)" stroke-width="2" opacity="0.5"/>
+        <circle cx="0" cy="0" r="55" fill="none" stroke="url(#coherent-gradient2)" stroke-width="2" opacity="0.3"/>
+
+        <!-- Connection nodes -->
+        <circle cx="40" cy="0" r="5" fill="#FF6B6B"/>
+        <circle cx="-40" cy="0" r="5" fill="#FF6B6B"/>
+        <circle cx="0" cy="40" r="5" fill="#FFA07A"/>
+        <circle cx="0" cy="-40" r="5" fill="#FFA07A"/>
+
+        <!-- Diagonal nodes -->
+        <circle cx="28" cy="28" r="4" fill="#C44569" opacity="0.8"/>
+        <circle cx="-28" cy="-28" r="4" fill="#C44569" opacity="0.8"/>
+        <circle cx="28" cy="-28" r="4" fill="#C44569" opacity="0.8"/>
+        <circle cx="-28" cy="28" r="4" fill="#C44569" opacity="0.8"/>
+
+        <!-- Connection lines -->
+        <line x1="0" y1="0" x2="40" y2="0" stroke="url(#coherent-gradient)" stroke-width="2" opacity="0.4"/>
+        <line x1="0" y1="0" x2="-40" y2="0" stroke="url(#coherent-gradient)" stroke-width="2" opacity="0.4"/>
+        <line x1="0" y1="0" x2="0" y2="40" stroke="url(#coherent-gradient2)" stroke-width="2" opacity="0.4"/>
+        <line x1="0" y1="0" x2="0" y2="-40" stroke="url(#coherent-gradient2)" stroke-width="2" opacity="0.4"/>
+    </g>
+
+    <!-- Letter C for Coherent -->
+    <g transform="translate(30, 30)">
+        <path d="M25 5 C15 5 5 15 5 25 L5 35 C5 45 15 55 25 55 L30 55 L30 45 L25 45 C20 45 15 40 15 35 L15 25 C15 20 20 15 25 15 L30 15 L30 5 Z"
+              fill="url(#coherent-gradient)" opacity="0.3"/>
+    </g>
+</svg>
