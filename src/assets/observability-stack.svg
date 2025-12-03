@@ -1,0 +1,125 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="obsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F172A"/>
+      <stop offset="100%" style="stop-color:#1E293B"/>
+    </linearGradient>
+    <filter id="obsShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#obsBg)"/>
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" fill="#FFFFFF" text-anchor="middle" font-weight="bold">Observability &amp; Monitoring Stack</text>
+  <text x="400" y="75" font-family="Arial, sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">Prometheus • Grafana • OpenTelemetry • Kubernetes</text>
+
+  <!-- Main Dashboard Container -->
+  <rect x="50" y="100" width="700" height="450" rx="12" fill="#1E293B" stroke="#334155" stroke-width="2" filter="url(#obsShadow)"/>
+
+  <!-- Dashboard Header -->
+  <rect x="50" y="100" width="700" height="50" rx="12 12 0 0" fill="#334155"/>
+  <text x="70" y="133" font-family="Arial, sans-serif" font-size="18" fill="#F1F5F9" font-weight="bold">System Metrics Dashboard</text>
+  <text x="710" y="133" font-family="Arial, sans-serif" font-size="12" fill="#94A3B8" text-anchor="end">Live • Updated 2s ago</text>
+
+  <!-- Metrics Grid -->
+  <!-- CPU Usage -->
+  <g>
+    <rect x="70" y="170" width="210" height="100" rx="8" fill="#0F172A" stroke="#475569" stroke-width="1"/>
+    <text x="85" y="195" font-family="Arial, sans-serif" font-size="13" fill="#CBD5E1" font-weight="bold">CPU Usage</text>
+    <text x="85" y="235" font-family="Arial, sans-serif" font-size="36" fill="#3B82F6" font-weight="bold">47.2%</text>
+    <text x="85" y="255" font-family="Arial, sans-serif" font-size="11" fill="#10B981">↑ 5% from baseline</text>
+  </g>
+
+  <!-- Memory Usage -->
+  <g>
+    <rect x="295" y="170" width="210" height="100" rx="8" fill="#0F172A" stroke="#475569" stroke-width="1"/>
+    <text x="310" y="195" font-family="Arial, sans-serif" font-size="13" fill="#CBD5E1" font-weight="bold">Memory Usage</text>
+    <text x="310" y="235" font-family="Arial, sans-serif" font-size="36" fill="#8B5CF6" font-weight="bold">6.8 GB</text>
+    <text x="310" y="255" font-family="Arial, sans-serif" font-size="11" fill="#94A3B8">of 16 GB allocated</text>
+  </g>
+
+  <!-- Request Rate -->
+  <g>
+    <rect x="520" y="170" width="210" height="100" rx="8" fill="#0F172A" stroke="#475569" stroke-width="1"/>
+    <text x="535" y="195" font-family="Arial, sans-serif" font-size="13" fill="#CBD5E1" font-weight="bold">Request Rate</text>
+    <text x="535" y="235" font-family="Arial, sans-serif" font-size="36" fill="#10B981" font-weight="bold">2.4K/s</text>
+    <text x="535" y="255" font-family="Arial, sans-serif" font-size="11" fill="#10B981">↑ 12% increase</text>
+  </g>
+
+  <!-- Performance Chart -->
+  <rect x="70" y="290" width="320" height="240" rx="8" fill="#0F172A" stroke="#475569" stroke-width="1"/>
+  <text x="85" y="315" font-family="Arial, sans-serif" font-size="14" fill="#F1F5F9" font-weight="bold">Response Time (ms)</text>
+
+  <!-- Chart Grid Lines -->
+  <line x1="85" y1="350" x2="370" y2="350" stroke="#334155" stroke-width="1"/>
+  <line x1="85" y1="390" x2="370" y2="390" stroke="#334155" stroke-width="1"/>
+  <line x1="85" y1="430" x2="370" y2="430" stroke="#334155" stroke-width="1"/>
+  <line x1="85" y1="470" x2="370" y2="470" stroke="#334155" stroke-width="1"/>
+
+  <!-- Chart Line -->
+  <path d="M 100 450 L 130 440 L 160 445 L 190 420 L 220 430 L 250 410 L 280 415 L 310 395 L 340 400 L 355 390"
+        stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Chart Area Fill -->
+  <path d="M 100 450 L 130 440 L 160 445 L 190 420 L 220 430 L 250 410 L 280 415 L 310 395 L 340 400 L 355 390 L 355 470 L 100 470 Z"
+        fill="#3B82F6" opacity="0.2"/>
+
+  <!-- Y-axis Labels -->
+  <text x="80" y="355" font-family="Arial, sans-serif" font-size="10" fill="#64748B" text-anchor="end">200</text>
+  <text x="80" y="395" font-family="Arial, sans-serif" font-size="10" fill="#64748B" text-anchor="end">150</text>
+  <text x="80" y="435" font-family="Arial, sans-serif" font-size="10" fill="#64748B" text-anchor="end">100</text>
+  <text x="80" y="475" font-family="Arial, sans-serif" font-size="10" fill="#64748B" text-anchor="end">50</text>
+
+  <!-- X-axis Labels -->
+  <text x="130" y="495" font-family="Arial, sans-serif" font-size="9" fill="#64748B" text-anchor="middle">10m</text>
+  <text x="220" y="495" font-family="Arial, sans-serif" font-size="9" fill="#64748B" text-anchor="middle">5m</text>
+  <text x="310" y="495" font-family="Arial, sans-serif" font-size="9" fill="#64748B" text-anchor="middle">now</text>
+
+  <!-- Service Health -->
+  <rect x="410" y="290" width="320" height="240" rx="8" fill="#0F172A" stroke="#475569" stroke-width="1"/>
+  <text x="425" y="315" font-family="Arial, sans-serif" font-size="14" fill="#F1F5F9" font-weight="bold">Service Health</text>
+
+  <!-- Service Items -->
+  <g>
+    <circle cx="440" cy="345" r="6" fill="#10B981"/>
+    <text x="455" y="350" font-family="Arial, sans-serif" font-size="12" fill="#CBD5E1">API Gateway</text>
+    <text x="690" y="350" font-family="Arial, sans-serif" font-size="11" fill="#10B981" text-anchor="end">99.98%</text>
+  </g>
+
+  <g>
+    <circle cx="440" cy="375" r="6" fill="#10B981"/>
+    <text x="455" y="380" font-family="Arial, sans-serif" font-size="12" fill="#CBD5E1">Auth Service</text>
+    <text x="690" y="380" font-family="Arial, sans-serif" font-size="11" fill="#10B981" text-anchor="end">99.95%</text>
+  </g>
+
+  <g>
+    <circle cx="440" cy="405" r="6" fill="#10B981"/>
+    <text x="455" y="410" font-family="Arial, sans-serif" font-size="12" fill="#CBD5E1">Database</text>
+    <text x="690" y="410" font-family="Arial, sans-serif" font-size="11" fill="#10B981" text-anchor="end">99.99%</text>
+  </g>
+
+  <g>
+    <circle cx="440" cy="435" r="6" fill="#F59E0B"/>
+    <text x="455" y="440" font-family="Arial, sans-serif" font-size="12" fill="#CBD5E1">Cache Service</text>
+    <text x="690" y="440" font-family="Arial, sans-serif" font-size="11" fill="#F59E0B" text-anchor="end">98.12%</text>
+  </g>
+
+  <g>
+    <circle cx="440" cy="465" r="6" fill="#10B981"/>
+    <text x="455" y="470" font-family="Arial, sans-serif" font-size="12" fill="#CBD5E1">Message Queue</text>
+    <text x="690" y="470" font-family="Arial, sans-serif" font-size="11" fill="#10B981" text-anchor="end">99.97%</text>
+  </g>
+
+  <g>
+    <circle cx="440" cy="495" r="6" fill="#10B981"/>
+    <text x="455" y="500" font-family="Arial, sans-serif" font-size="12" fill="#CBD5E1">Search Engine</text>
+    <text x="690" y="500" font-family="Arial, sans-serif" font-size="11" fill="#10B981" text-anchor="end">99.93%</text>
+  </g>
+
+  <!-- Tech Stack Badge -->
+  <rect x="300" y="565" width="200" height="22" rx="11" fill="#3B82F6" opacity="0.9"/>
+  <text x="400" y="580" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="bold">Prometheus + Grafana + K8s</text>
+</svg>

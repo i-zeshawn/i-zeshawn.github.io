@@ -1,0 +1,120 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="collab-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#16213E"/>
+    </linearGradient>
+    <linearGradient id="collab-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00D9FF"/>
+      <stop offset="100%" style="stop-color:#00B8D4"/>
+    </linearGradient>
+    <radialGradient id="glow-circle">
+      <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#00D9FF;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#collab-bg)"/>
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="url(#collab-accent)" text-anchor="middle">Real-Time Collaboration Platform</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="16" fill="#00D9FF" text-anchor="middle" opacity="0.8">Supporting 100K+ Concurrent Users</text>
+
+  <!-- Central Server/Hub -->
+  <g transform="translate(350, 270)">
+    <circle cx="50" cy="50" r="60" fill="url(#glow-circle)" opacity="0.3"/>
+    <circle cx="50" cy="50" r="45" fill="url(#collab-accent)" opacity="0.2"/>
+    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#collab-accent)" stroke-width="3"/>
+    <text x="50" y="45" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">WebSocket</text>
+    <text x="50" y="62" font-family="Arial, sans-serif" font-size="12" fill="#00D9FF" text-anchor="middle">Server</text>
+  </g>
+
+  <!-- User nodes -->
+  <g id="user-1" transform="translate(150, 150)">
+    <circle cx="25" cy="25" r="20" fill="#4CAF50" opacity="0.3"/>
+    <circle cx="25" cy="25" r="20" fill="none" stroke="#4CAF50" stroke-width="2"/>
+    <circle cx="25" cy="20" r="7" fill="#fff"/>
+    <path d="M15 30 Q25 35 35 30" stroke="#fff" stroke-width="2" fill="none"/>
+    <text x="25" y="60" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">User 1</text>
+  </g>
+
+  <g id="user-2" transform="translate(600, 150)">
+    <circle cx="25" cy="25" r="20" fill="#2196F3" opacity="0.3"/>
+    <circle cx="25" cy="25" r="20" fill="none" stroke="#2196F3" stroke-width="2"/>
+    <circle cx="25" cy="20" r="7" fill="#fff"/>
+    <path d="M15 30 Q25 35 35 30" stroke="#fff" stroke-width="2" fill="none"/>
+    <text x="25" y="60" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">User 2</text>
+  </g>
+
+  <g id="user-3" transform="translate(150, 450)">
+    <circle cx="25" cy="25" r="20" fill="#FF9800" opacity="0.3"/>
+    <circle cx="25" cy="25" r="20" fill="none" stroke="#FF9800" stroke-width="2"/>
+    <circle cx="25" cy="20" r="7" fill="#fff"/>
+    <path d="M15 30 Q25 35 35 30" stroke="#fff" stroke-width="2" fill="none"/>
+    <text x="25" y="60" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">User 3</text>
+  </g>
+
+  <g id="user-4" transform="translate(600, 450)">
+    <circle cx="25" cy="25" r="20" fill="#E91E63" opacity="0.3"/>
+    <circle cx="25" cy="25" r="20" fill="none" stroke="#E91E63" stroke-width="2"/>
+    <circle cx="25" cy="20" r="7" fill="#fff"/>
+    <path d="M15 30 Q25 35 35 30" stroke="#fff" stroke-width="2" fill="none"/>
+    <text x="25" y="60" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">User 4</text>
+  </g>
+
+  <!-- WebRTC connections -->
+  <line x1="175" y1="175" x2="390" y2="305" stroke="#00D9FF" stroke-width="2" opacity="0.6" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" from="0" to="20" dur="1s" repeatCount="indefinite"/>
+  </line>
+  <line x1="625" y1="175" x2="410" y2="305" stroke="#00D9FF" stroke-width="2" opacity="0.6" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" from="0" to="20" dur="1s" repeatCount="indefinite"/>
+  </line>
+  <line x1="175" y1="475" x2="390" y2="335" stroke="#00D9FF" stroke-width="2" opacity="0.6" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" from="0" to="20" dur="1s" repeatCount="indefinite"/>
+  </line>
+  <line x1="625" y1="475" x2="410" y2="335" stroke="#00D9FF" stroke-width="2" opacity="0.6" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" from="0" to="20" dur="1s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Redis Pub/Sub -->
+  <g transform="translate(50, 280)">
+    <rect x="0" y="0" width="120" height="70" rx="8" fill="#DC143C" opacity="0.2"/>
+    <rect x="0" y="0" width="120" height="70" rx="8" fill="none" stroke="#DC143C" stroke-width="2"/>
+    <text x="60" y="30" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#DC143C" text-anchor="middle">Redis</text>
+    <text x="60" y="48" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">Pub/Sub</text>
+  </g>
+
+  <!-- D3.js Visualization -->
+  <g transform="translate(630, 280)">
+    <rect x="0" y="0" width="120" height="70" rx="8" fill="#F88C00" opacity="0.2"/>
+    <rect x="0" y="0" width="120" height="70" rx="8" fill="none" stroke="#F88C00" stroke-width="2"/>
+    <text x="60" y="28" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#F88C00" text-anchor="middle">D3.js</text>
+    <text x="60" y="45" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">Visualization</text>
+    <!-- Small chart icon -->
+    <path d="M20 55 L30 50 L40 58 L50 45 L60 52 L70 48 L80 55 L90 50 L100 58" stroke="#F88C00" stroke-width="1.5" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- Metrics panel -->
+  <g transform="translate(300, 130)">
+    <rect x="0" y="0" width="200" height="60" rx="8" fill="#1A237E" opacity="0.5"/>
+    <text x="100" y="25" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle">Concurrent Users</text>
+    <text x="100" y="45" font-family="Arial, sans-serif" font-size="18" fill="#4CAF50" text-anchor="middle" font-weight="bold">100,000+</text>
+  </g>
+
+  <!-- Feature badges -->
+  <g transform="translate(50, 530)">
+    <rect x="0" y="0" width="110" height="28" rx="14" fill="#4CAF50" opacity="0.3"/>
+    <text x="55" y="18" font-family="Arial, sans-serif" font-size="11" fill="#4CAF50" text-anchor="middle" font-weight="bold">Optimistic UI</text>
+  </g>
+
+  <g transform="translate(180, 530)">
+    <rect x="0" y="0" width="130" height="28" rx="14" fill="#2196F3" opacity="0.3"/>
+    <text x="65" y="18" font-family="Arial, sans-serif" font-size="11" fill="#2196F3" text-anchor="middle" font-weight="bold">Conflict Resolution</text>
+  </g>
+
+  <g transform="translate(330, 530)">
+    <rect x="0" y="0" width="140" height="28" rx="14" fill="#FF9800" opacity="0.3"/>
+    <text x="70" y="18" font-family="Arial, sans-serif" font-size="11" fill="#FF9800" text-anchor="middle" font-weight="bold">45% ↑ Engagement</text>
+  </g>
+</svg>

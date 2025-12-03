@@ -1,0 +1,108 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aws-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#232F3E"/>
+      <stop offset="100%" style="stop-color:#414A4C"/>
+    </linearGradient>
+    <linearGradient id="aws-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9900"/>
+      <stop offset="100%" style="stop-color:#F58536"/>
+    </linearGradient>
+    <linearGradient id="aws-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#527FFF"/>
+      <stop offset="100%" style="stop-color:#3B5998"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#aws-bg)"/>
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="url(#aws-orange)" text-anchor="middle">AWS Serverless Data Pipelines</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="16" fill="#FF9900" text-anchor="middle" opacity="0.8">Processing 10TB+ Daily</text>
+
+  <!-- Lambda Functions -->
+  <g transform="translate(100, 150)">
+    <path d="M0 20 L20 0 L60 0 L80 20 L60 40 L20 40 Z" fill="url(#aws-orange)" opacity="0.3"/>
+    <path d="M0 20 L20 0 L60 0 L80 20 L60 40 L20 40 Z" fill="none" stroke="#FF9900" stroke-width="2"/>
+    <text x="40" y="27" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">Lambda</text>
+  </g>
+
+  <g transform="translate(250, 150)">
+    <path d="M0 20 L20 0 L60 0 L80 20 L60 40 L20 40 Z" fill="url(#aws-orange)" opacity="0.3"/>
+    <path d="M0 20 L20 0 L60 0 L80 20 L60 40 L20 40 Z" fill="none" stroke="#FF9900" stroke-width="2"/>
+    <text x="40" y="27" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">Lambda</text>
+  </g>
+
+  <g transform="translate(400, 150)">
+    <path d="M0 20 L20 0 L60 0 L80 20 L60 40 L20 40 Z" fill="url(#aws-orange)" opacity="0.3"/>
+    <path d="M0 20 L20 0 L60 0 L80 20 L60 40 L20 40 Z" fill="none" stroke="#FF9900" stroke-width="2"/>
+    <text x="40" y="27" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">Lambda</text>
+  </g>
+
+  <!-- Step Functions -->
+  <g transform="translate(300, 280)">
+    <rect x="0" y="0" width="200" height="70" rx="10" fill="url(#aws-blue)" opacity="0.2"/>
+    <rect x="0" y="0" width="200" height="70" rx="10" fill="none" stroke="#527FFF" stroke-width="2"/>
+    <text x="100" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#527FFF" text-anchor="middle">AWS Step Functions</text>
+    <text x="100" y="50" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle">Orchestration</text>
+  </g>
+
+  <!-- Kinesis Stream -->
+  <g transform="translate(100, 420)">
+    <rect x="0" y="0" width="160" height="60" rx="8" fill="#9D27B0" opacity="0.2"/>
+    <rect x="0" y="0" width="160" height="60" rx="8" fill="none" stroke="#9D27B0" stroke-width="2"/>
+    <text x="80" y="28" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#9D27B0" text-anchor="middle">Kinesis</text>
+    <text x="80" y="45" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">Real-time Stream</text>
+    <!-- Stream flow lines -->
+    <line x1="10" y1="30" x2="150" y2="30" stroke="#9D27B0" stroke-width="1" opacity="0.5"/>
+    <line x1="10" y1="38" x2="150" y2="38" stroke="#9D27B0" stroke-width="1" opacity="0.5"/>
+    <line x1="10" y1="46" x2="150" y2="46" stroke="#9D27B0" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- DynamoDB -->
+  <g transform="translate(540, 420)">
+    <rect x="0" y="0" width="160" height="60" rx="8" fill="#4051B5" opacity="0.2"/>
+    <rect x="0" y="0" width="160" height="60" rx="8" fill="none" stroke="#4051B5" stroke-width="2"/>
+    <text x="80" y="28" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4051B5" text-anchor="middle">DynamoDB</text>
+    <text x="80" y="45" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">NoSQL Database</text>
+  </g>
+
+  <!-- SageMaker -->
+  <g transform="translate(300, 520)">
+    <rect x="0" y="0" width="200" height="50" rx="8" fill="#00C853" opacity="0.2"/>
+    <rect x="0" y="0" width="200" height="50" rx="8" fill="none" stroke="#00C853" stroke-width="2"/>
+    <text x="100" y="22" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#00C853" text-anchor="middle">SageMaker ML</text>
+    <text x="100" y="38" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">Model Inference</text>
+  </g>
+
+  <!-- Connection arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#FF9900"/>
+    </marker>
+  </defs>
+
+  <line x1="140" y1="190" x2="360" y2="280" stroke="#FF9900" stroke-width="2" opacity="0.6" marker-end="url(#arrowhead)"/>
+  <line x1="290" y1="190" x2="380" y2="280" stroke="#FF9900" stroke-width="2" opacity="0.6" marker-end="url(#arrowhead)"/>
+  <line x1="440" y1="190" x2="420" y2="280" stroke="#FF9900" stroke-width="2" opacity="0.6" marker-end="url(#arrowhead)"/>
+
+  <line x1="400" y1="350" x2="260" y2="420" stroke="#527FFF" stroke-width="2" opacity="0.6" stroke-dasharray="5,5"/>
+  <line x1="400" y1="350" x2="620" y2="420" stroke="#527FFF" stroke-width="2" opacity="0.6" stroke-dasharray="5,5"/>
+  <line x1="400" y1="350" x2="400" y2="520" stroke="#527FFF" stroke-width="2" opacity="0.6" stroke-dasharray="5,5"/>
+
+  <!-- Metrics -->
+  <g transform="translate(600, 150)">
+    <rect x="0" y="0" width="150" height="80" rx="10" fill="#1A237E" opacity="0.3"/>
+    <rect x="0" y="0" width="150" height="80" rx="10" fill="none" stroke="#527FFF" stroke-width="1"/>
+    <text x="75" y="25" font-family="Arial, sans-serif" font-size="12" fill="#527FFF" text-anchor="middle" font-weight="bold">Performance</text>
+    <text x="75" y="45" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">10TB+ daily</text>
+    <text x="75" y="62" font-family="Arial, sans-serif" font-size="10" fill="#00C853" text-anchor="middle">Cost optimized</text>
+  </g>
+
+  <!-- Badge -->
+  <g transform="translate(50, 520)">
+    <rect x="0" y="0" width="120" height="30" rx="15" fill="#FF9900" opacity="0.3"/>
+    <text x="60" y="20" font-family="Arial, sans-serif" font-size="11" fill="#FF9900" text-anchor="middle" font-weight="bold">40% Faster</text>
+  </g>
+</svg>

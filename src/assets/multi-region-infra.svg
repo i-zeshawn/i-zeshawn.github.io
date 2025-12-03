@@ -1,0 +1,138 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="infra-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A192F"/>
+      <stop offset="100%" style="stop-color:#172A46"/>
+    </linearGradient>
+    <linearGradient id="azure-infra" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0078D4"/>
+      <stop offset="100%" style="stop-color:#50E6FF"/>
+    </linearGradient>
+    <linearGradient id="terraform" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7B42BC"/>
+      <stop offset="100%" style="stop-color:#5C4EE5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#infra-bg)"/>
+
+  <!-- World map simplified -->
+  <g opacity="0.1">
+    <ellipse cx="400" cy="300" rx="350" ry="200" fill="none" stroke="#50E6FF" stroke-width="1"/>
+    <line x1="50" y1="300" x2="750" y2="300" stroke="#50E6FF" stroke-width="0.5"/>
+    <line x1="400" y1="100" x2="400" y2="500" stroke="#50E6FF" stroke-width="0.5"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="url(#azure-infra)" text-anchor="middle">Multi-Region Cloud Infrastructure</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="16" fill="#50E6FF" text-anchor="middle" opacity="0.8">15+ Azure Regions • $3M Annual Savings</text>
+
+  <!-- Regions -->
+  <!-- US East -->
+  <g id="region-us-east" transform="translate(150, 250)">
+    <circle cx="0" cy="0" r="40" fill="url(#azure-infra)" opacity="0.2"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="url(#azure-infra)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="8" fill="#0078D4"/>
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle">US East</text>
+  </g>
+
+  <!-- EU West -->
+  <g id="region-eu-west" transform="translate(400, 200)">
+    <circle cx="0" cy="0" r="40" fill="url(#azure-infra)" opacity="0.2"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="url(#azure-infra)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="8" fill="#0078D4"/>
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle">EU West</text>
+  </g>
+
+  <!-- Asia Pacific -->
+  <g id="region-asia" transform="translate(650, 250)">
+    <circle cx="0" cy="0" r="40" fill="url(#azure-infra)" opacity="0.2"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="url(#azure-infra)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="8" fill="#0078D4"/>
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle">Asia Pacific</text>
+  </g>
+
+  <!-- US West -->
+  <g id="region-us-west" transform="translate(250, 400)">
+    <circle cx="0" cy="0" r="35" fill="url(#azure-infra)" opacity="0.2"/>
+    <circle cx="0" cy="0" r="35" fill="none" stroke="url(#azure-infra)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="6" fill="#50E6FF"/>
+    <text x="0" y="50" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">US West</text>
+  </g>
+
+  <!-- More regions indicator -->
+  <g transform="translate(500, 400)">
+    <circle cx="0" cy="0" r="35" fill="url(#azure-infra)" opacity="0.2"/>
+    <circle cx="0" cy="0" r="35" fill="none" stroke="url(#azure-infra)" stroke-width="2"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">+11</text>
+    <text x="0" y="50" font-family="Arial, sans-serif" font-size="10" fill="#50E6FF" text-anchor="middle">more regions</text>
+  </g>
+
+  <!-- Interconnections -->
+  <line x1="150" y1="250" x2="400" y2="200" stroke="url(#azure-infra)" stroke-width="2" opacity="0.4" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" from="0" to="20" dur="2s" repeatCount="indefinite"/>
+  </line>
+  <line x1="400" y1="200" x2="650" y2="250" stroke="url(#azure-infra)" stroke-width="2" opacity="0.4" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" from="0" to="20" dur="2s" repeatCount="indefinite"/>
+  </line>
+  <line x1="150" y1="250" x2="250" y2="400" stroke="url(#azure-infra)" stroke-width="2" opacity="0.4" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" from="0" to="20" dur="2s" repeatCount="indefinite"/>
+  </line>
+  <line x1="650" y1="250" x2="500" y2="400" stroke="url(#azure-infra)" stroke-width="2" opacity="0.4" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" from="0" to="20" dur="2s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Kubernetes -->
+  <g transform="translate(50, 480)">
+    <rect x="0" y="0" width="150" height="70" rx="8" fill="#326CE5" opacity="0.2"/>
+    <rect x="0" y="0" width="150" height="70" rx="8" fill="none" stroke="#326CE5" stroke-width="2"/>
+    <text x="75" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#326CE5" text-anchor="middle">Kubernetes</text>
+    <text x="75" y="50" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle">200+ Services</text>
+  </g>
+
+  <!-- Terraform -->
+  <g transform="translate(230, 480)">
+    <rect x="0" y="0" width="150" height="70" rx="8" fill="url(#terraform)" opacity="0.2"/>
+    <rect x="0" y="0" width="150" height="70" rx="8" fill="none" stroke="url(#terraform)" stroke-width="2"/>
+    <text x="75" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7B42BC" text-anchor="middle">Terraform</text>
+    <text x="75" y="50" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle">Infrastructure as Code</text>
+  </g>
+
+  <!-- Pulumi -->
+  <g transform="translate(410, 480)">
+    <rect x="0" y="0" width="150" height="70" rx="8" fill="#8A3FFC" opacity="0.2"/>
+    <rect x="0" y="0" width="150" height="70" rx="8" fill="none" stroke="#8A3FFC" stroke-width="2"/>
+    <text x="75" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#8A3FFC" text-anchor="middle">Pulumi</text>
+    <text x="75" y="50" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle">Cloud Native</text>
+  </g>
+
+  <!-- Disaster Recovery -->
+  <g transform="translate(590, 480)">
+    <rect x="0" y="0" width="150" height="70" rx="8" fill="#00C853" opacity="0.2"/>
+    <rect x="0" y="0" width="150" height="70" rx="8" fill="none" stroke="#00C853" stroke-width="2"/>
+    <text x="75" y="30" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#00C853" text-anchor="middle">Disaster</text>
+    <text x="75" y="48" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#00C853" text-anchor="middle">Recovery</text>
+  </g>
+
+  <!-- Metrics -->
+  <g transform="translate(50, 120)">
+    <rect x="0" y="0" width="140" height="35" rx="17.5" fill="#4CAF50" opacity="0.3"/>
+    <text x="70" y="23" font-family="Arial, sans-serif" font-size="13" fill="#4CAF50" text-anchor="middle" font-weight="bold">↓ $3M Cost</text>
+  </g>
+
+  <g transform="translate(210, 120)">
+    <rect x="0" y="0" width="150" height="35" rx="17.5" fill="#FF9800" opacity="0.3"/>
+    <text x="75" y="23" font-family="Arial, sans-serif" font-size="12" fill="#FF9800" text-anchor="middle" font-weight="bold">Zero Downtime</text>
+  </g>
+
+  <g transform="translate(380, 120)">
+    <rect x="0" y="0" width="160" height="35" rx="17.5" fill="#2196F3" opacity="0.3"/>
+    <text x="80" y="23" font-family="Arial, sans-serif" font-size="12" fill="#2196F3" text-anchor="middle" font-weight="bold">Auto-Scaling</text>
+  </g>
+
+  <g transform="translate(560, 120)">
+    <rect x="0" y="0" width="180" height="35" rx="17.5" fill="#9C27B0" opacity="0.3"/>
+    <text x="90" y="23" font-family="Arial, sans-serif" font-size="12" fill="#9C27B0" text-anchor="middle" font-weight="bold">Multi-Region Failover</text>
+  </g>
+</svg>
