@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {memo} from 'react'
 import {Tilt} from "react-tilt";
 import {motion} from "framer-motion";
 import {styles} from "../style.js";
@@ -7,7 +7,7 @@ import SectionWrapper from "../hoc/index.js";
 import {projects} from "../constants/index.js";
 import {fadeIn, textVariant} from "../utils/motion.js";
 
-const ProjectCard = ({
+const ProjectCard = memo(({
                          index,
                          name,
                          description,
@@ -28,8 +28,9 @@ const ProjectCard = ({
                 <div className='relative w-full h-[230px]'>
                     <img
                         src={image}
-                        alt='project_image'
+                        alt={`${name} project preview`}
                         className='w-full h-full object-cover rounded-2xl'
+                        loading="lazy"
                     />
 
                     <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
@@ -64,7 +65,7 @@ const ProjectCard = ({
             </Tilt>
         </motion.div>
     );
-};
+});
 const Works = () => {
     return (
         <>
